@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <title>Vue Test examples</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+
 </head>
+
 <body>
     <h1> Vue 2.0 Test examples</h1>
-    <ul>
-        <li> <a href="1.html">Ejemplo 1</a></li>
-    </ul>
+    <div id="vue_app">
+        <ul>
+            <li> <a href="1.html">Ejemplo 1</a></li>
+        </ul>
+        {{message}}
+    </div>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.common.js"></script>
+    <script>
+        new Vue({
+            el: "#vue_app",
+            data: {
+                message: "Hello 2.0"
+            }
+        });
+    </script>
 </body>
+
+
 </html>
