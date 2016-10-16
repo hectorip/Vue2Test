@@ -11,7 +11,7 @@
     <h1> Vue 2.0 Test examples</h1>
     <div id="vue_app">
         <ul>
-            <li v-for="e in examples"> <a href="{{e}}.html">{{e | capitalize}}</a></li>
+            <li v-for="e in examples"> <a href="{{e}}.html">{{ capitalize(e) }}</a></li>
         </ul>
     </div>
     
@@ -22,6 +22,11 @@
             data: {
                 message: "Hello 2.0",
                 examples: ["component"]
+            },
+            methods: {
+                capitalize: function(val){
+                    return val[0].toUpperCase() + val.slice(1)
+                }
             }
         });
     </script>
