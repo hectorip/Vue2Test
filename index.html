@@ -11,7 +11,7 @@
     <h1> Vue 2.0 Test examples</h1>
     <div id="vue_app">
         <ul>
-            <li v-for="example in examples"> <a href="1.html">Ejemplo 1</a></li>
+            <li v-for="e in examples"> <a href="{{e}}.html">{{e | capitalize}}</a></li>
         </ul>
     </div>
     
@@ -21,7 +21,7 @@
             el: "#vue_app",
             data: {
                 message: "Hello 2.0",
-                examples: []
+                examples: ["component"]
             }
         });
     </script>
