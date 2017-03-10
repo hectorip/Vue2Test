@@ -1,4 +1,6 @@
 
-# Vue2Test
+# Test de Vue2
 
-Probando Vue 2 - por mi cuenta
+Ejercicios Vue 2, aprendiendo de Laracasts.com
+
+
